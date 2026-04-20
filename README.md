@@ -1,34 +1,47 @@
-# Cursor plugin template
+**This plugin is currently in Preview.**
 
-Build and publish Cursor Marketplace plugins from a single repo.
+# GitKraken Cursor Plugin
 
-Two starter plugins are included:
+The GitKraken Cursor Plugin wraps our MCP Server and turns your AI assistant into a context-aware development partner by connecting it to git history, branches, issues, pull requests, and multi-repo workflows through GitKraken. It works with all the providers you would expect from the GitKraken software suite such as GitHub, GitLab, Azure DevOps, Bitbucket, Jira and more.
 
-- **starter-simple**: rules and skills only
-- **starter-advanced**: rules, skills, agents, commands, hooks, MCP, and scripts
+## What you need
+
+- [Cursor](https://cursor.com/) IDE (v2.6.0+)
 
 ## Getting started
 
-[Use this template](https://github.com/cursor/plugin-template/generate) to create a new repository, then customize:
+If you already have the GitKraken MCP server registered separately, disable or remove it first to avoid conflicts.
 
-1. `.cursor-plugin/marketplace.json`: set marketplace `name`, `owner`, and `metadata`.
-2. `plugins/*/.cursor-plugin/plugin.json`: set `name` (lowercase kebab-case), `displayName`, `author`, `description`, `keywords`, `license`, and `version`.
-3. Replace placeholder rules, skills, agents, commands, hooks, scripts, and logos.
+1. Open Cursor Settings by clicking on the gear icon in the left sidebar or by running the "Cursor Settings" command in the Command Palette.
+2. Go to the **Plugins** section
+3. Install the **GitKraken** plugin
 
-To add more plugins, see `docs/add-a-plugin.md`.
+## Using the plugin
 
-## Single plugin vs multi-plugin
+Once connected, just ask the agent anything about your Git repos, branches, commits, pull requests, issues, and more. Here are some example prompts to get you started:
 
-This template defaults to **multi-plugin** (multiple plugins in one repo).
+```
+Show me issues assigned to me
+```
 
-For a **single plugin**, move your plugin folder contents to the repository root, keep one `.cursor-plugin/plugin.json`, and remove `.cursor-plugin/marketplace.json`.
+```
+Show me pull requests in progress
+```
 
-## Submission checklist
+```
+Who last modified this file
+```
 
-- Each plugin has a valid `.cursor-plugin/plugin.json`.
-- Plugin names are unique, lowercase, and kebab-case.
-- `.cursor-plugin/marketplace.json` entries map to real plugin folders.
-- All frontmatter metadata is present in rule, skill, agent, and command files.
-- Logos are committed and referenced with relative paths.
-- `node scripts/validate-template.mjs` passes.
-- Repository link is ready for submission to the Cursor team (Slack or `kniparko@anysphere.com`).
+## Support
+
+If you run into any issues, double check if we have the problem covered in our [Help Center](https://help.gitkraken.com/mcp/mcp-getting-started/).
+
+You can give feedback and report bugs on GitHub by [submitting an issue](https://github.com/gitkraken/gk-cli/issues/new?template=bug_report.yml).
+
+If you would like to reach out to Support directly, you can [submit a ticket](https://gitkraken.com/contact)
+
+## Legal
+
+See the [LICENSE](LICENSE) and [NOTICE](NOTICE) files included with this plugin.
+
+For details on how GitKraken handles your data, see the [GitKraken Privacy Policy](https://www.gitkraken.com/privacy).
