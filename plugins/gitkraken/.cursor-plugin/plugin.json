@@ -1,0 +1,23 @@
+{
+  "name": "gitkraken",
+  "displayName": "GitKraken",
+  "version": "0.1.0",
+  "description": "GitKraken MCP wrapper",
+  "author": {
+    "name": "GitKraken",
+    "email": "plugins@gitkraken.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "cursor",
+    "plugin",
+    "gitkraken",
+    "rules",
+    "skills",
+    "agents",
+    "commands",
+    "hooks",
+    "mcp"
+  ],
+  "logo": "assets/logo.svg"
+}

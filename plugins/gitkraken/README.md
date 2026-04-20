@@ -1,4 +1,4 @@
-# starter-advanced
+# GitKraken
 
 Full-featured Cursor plugin starter.
 
