@@ -2,21 +2,25 @@
 
 # GitKraken Cursor Plugin
 
-The GitKraken Cursor Plugin wraps our MCP Server and turns your AI assistant into a context-aware development partner by connecting it to git history, branches, issues, pull requests, and multi-repo workflows through GitKraken. It works with all the providers you would expect from the GitKraken software suite such as GitHub, GitLab, Azure DevOps, Bitbucket, Jira and more.
+This plugin gives Cursor's AI access to your real Git and project context: commits, branches, pull requests, and issues across every repo you work in. Ask the agent a question about your work, and it answers from what's actually in your history and your trackers, not what it can guess from the open file.
+
+Works with GitHub, GitLab, Azure DevOps, Bitbucket, and Jira.
 
 ## What you need
 
 - [Cursor](https://cursor.com/) IDE (v2.6.0+)
+- A [GitKraken account](https://gitkraken.dev) (free works) to connect your Git and tracker providers
 
-## Getting started
+## Installation 
 
-If you already have the GitKraken MCP server registered separately, disable or remove it first to avoid conflicts.
+- Open Cursor Settings (gear icon in the left sidebar, or "Cursor Settings" in the Command Palette).
+- Go to Plugins.
+- Install the GitKraken plugin.
+- When prompted, sign in to GitKraken and connect the providers you want the agent to see (GitHub, GitLab, Jira, etc.).
 
-1. Open Cursor Settings by clicking on the gear icon in the left sidebar or by running the "Cursor Settings" command in the Command Palette.
-2. Go to the **Plugins** section
-3. Install the **GitKraken** plugin
+Already running the GitKraken MCP server in Cursor separately? Disable or remove it first so you don't get conflicting tools.
 
-## Using the plugin
+## What you can do
 
 Once connected, just ask the agent anything about your Git repos, branches, commits, pull requests, issues, and more. Here are some example prompts to get you started:
 
